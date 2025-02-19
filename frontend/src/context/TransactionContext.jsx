@@ -17,7 +17,7 @@ export const TransactionProvider = ({ children }) => {
     }
   };
   
- const API_BASE_URL="https://transaction-tracking-app-u74o.onrender.com/api"
+ const API_BASE_URL="https://transaction-tracking-app-u74o.onrender.com/api";
   const addTransaction = async (transaction) => {
     try {
       const response = await axios.post(`${API_BASE_URL}/transactions`, transaction);
