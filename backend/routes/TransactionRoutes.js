@@ -8,6 +8,7 @@ router.get('/', async (req, res) => {
   try {
     const transactions = await Transaction.find().sort({ date: -1 });
     res.json(transactions);
+    console.log("hii");
   } catch (error) {
     res.status(500).json({ message: 'Error fetching transactions' });
   }
