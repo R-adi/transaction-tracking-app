@@ -8,7 +8,7 @@ export const TransactionProvider = ({ children }) => {
 
   const fetchTransactions = async () => {
     try {
-      const response = await axios.get(`https://transaction-tracking-app.vercel.app/transactions`);
+      const response = await axios.get(`https://transaction-tracking-app-u74o.onrender.com/api/transactions`);
       console.log('Fetched Transactions:', response.data); // Debugging
       setTransactions(Array.isArray(response.data) ? response.data : []); // Ensure array
     } catch (error) {
@@ -17,7 +17,7 @@ export const TransactionProvider = ({ children }) => {
     }
   };
   
- const API_BASE_URL="https://transaction-tracking-app.vercel.app"
+ const API_BASE_URL="https://transaction-tracking-app-u74o.onrender.com/api"
   const addTransaction = async (transaction) => {
     try {
       const response = await axios.post(`${API_BASE_URL}/transactions`, transaction);
