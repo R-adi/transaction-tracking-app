@@ -56,14 +56,14 @@ const Dashboard = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div className="p-4 border rounded">
           <h2 className="text-lg font-semibold">Total Expenses</h2>
-          <p className="text-2xl">${totalExpenses.toFixed(2)}</p>
+          <p className="text-2xl">₹{totalExpenses.toFixed(2)}</p>
         </div>
         <div className="p-4 border rounded">
           <h2 className="text-lg font-semibold">Category Breakdown</h2>
           <ul>
             {Object.entries(categoryBreakdown).map(([category, amount]) => (
               <li key={category}>
-                {category}: ${amount.toFixed(2)}
+                {category}: ₹{amount.toFixed(2)}
               </li>
             ))}
           </ul>
@@ -73,7 +73,7 @@ const Dashboard = () => {
           <ul>
             {transactions.slice(0, 3).map((t) => (
               <li key={t._id}>
-                ${t.amount} - {t.description}
+                ₹{t.amount} - {t.description}
               </li>
             ))}
           </ul>
