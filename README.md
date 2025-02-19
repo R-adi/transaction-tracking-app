@@ -3,7 +3,7 @@
 A simple **expense tracking app** that allows users to **add, edit, and delete transactions**, view **monthly expense charts**, and analyze spending by category. Built with **React (Vite), Tailwind CSS, shadcn/ui, Recharts, Node.js, Express, and MongoDB**.
 
   ## Screenshots
-![Quizo Homepage](https://github.com/R-adi/transaction-tracking-app/blob/main/frontend/src/assets/Screenshot%20(102).png?raw=true)
+![App Homepage](https://github.com/R-adi/transaction-tracking-app/blob/main/frontend/src/assets/Screenshot%20(105).png?raw=true)
 
 ## 🚀 Features Breakdown
 
