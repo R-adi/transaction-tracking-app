@@ -7,7 +7,7 @@ const app = express();
 const PORT = 10000;
 
 // Middleware
-app.use(cors());
+app.use(cors({ origin: 'https://transaction-tracking-app-rumh.vercel.app' }));
 app.use(express.json());
 
 // Routes
