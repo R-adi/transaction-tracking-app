@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
     const transactions = await Transaction.find().sort({ date: -1 });
     res.json(transactions);
     console.log("hii");
-    res.json({message:"hello"});
+    // res.json({message:"hello"});
   } catch (error) {
     res.status(500).json({ message: 'Error fetching transactions' });
   }
